@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Login Form</title>
+</head>
+    <body>
+    <h1 style="color:green">Login to Find your world</h1>
+        <form action="#" th:action="@{/}" th:object="${inputForm}" method="post">
+         <img src="/Images/Image1.png" />
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" th:field="*{name}" /></td>
+                    <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="text" th:field="*{age}" /></td>
+                    <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
