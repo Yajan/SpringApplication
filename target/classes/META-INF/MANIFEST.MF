@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: SpringApp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Yajana
+Implementation-Vendor-Id: com.yajana.App
+Build-Jdk: 1.8.0_141
+Implementation-URL: http://projects.spring.io/spring-boot/SpringApp/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

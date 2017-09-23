@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Test Result</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1 style="color:green; display: table; margin-right: auto;  margin-left: auto;">Result:</h1>
+    <p th:utext="${#strings.replace(#strings.escapeJava(output),'\n','&lt;br /&gt;')}" ></p>
+    
+    
+</body>
+</html>

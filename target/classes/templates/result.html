@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Home</title>
+</head>
+	<body>
+		<h1 style="color:green">Execute your projects</h1>
+		<p>Do you want to Execute your project</p>
+                <form action="#" th:action="@{/result}" th:object="${projectForm}" method="post">
+                <table>
+                <tr>
+                    <td>Path:</td>
+                    <td><input type="text" th:field="*{path}" /></td>
+                    <td th:if="${#fields.hasErrors('path')}" th:errors="*{path}">Name Error</td>
+                </tr>
+                <tr>
+                    <td>Command:</td>
+                    <td><input type="text" th:field="*{cmd}" /></td>
+                    <td th:if="${#fields.hasErrors('cmd')}" th:errors="*{cmd}">Age Error</td>
+                </tr>
+                <tr>
+              		<td>Check it <input type="checkbox" /></td>
+              	</tr>
+              	<tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+               </table>
+             </form>
+                   
+	</body>
+</html>
